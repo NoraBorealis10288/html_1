@@ -7,7 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="navbar">
+  <div id="section1">  
     <h1 class="display-6">Globalism Through the Power of Friendship</h1>
     <p>
       I have friends from all over the world, and more of my friends are from
@@ -94,10 +95,10 @@
 
     <blockquote class="blockquote">"Friendship is the only cement that will ever hold the world together"</blockquote>
     <blockquote class="blockquote-footer">Woodrow Wilson</blockquote>
-
+  </div>
     <!--This is the part where I stopped trying to fit everything-->
     <!--with the website and just started making stuff up.-->
-
+  <div id="section2">
     <table class="table table-dark table-striped">
       <tr>
         <td>header 1</td>
@@ -221,8 +222,237 @@
       Loading...
     </button>
 
+    <!--This marks the stuff added as part of css assignment 7: bootstrap part 2-->
+    <!--list groups - at least 3 types-->
+    <ul class="list-group">
+      <li class = "list-group-item">non-active item 1</li>
+      <li class = "list-group-item active">active item</li>
+      <li class = "list-group-item">non-active item 2</li>
+    </ul>
+    
+    <div class="container pt-5">
+    <div class="list-group">
+      <li class="list-group-item active">Helpful Links:</li>
+      <a href="https://www.walmart.com/ip/Banquet-Brown-N-Serve-Original-Fully-Cooked-Sausage-Links-Frozen-Meat-32-oz-About-50-Count-Frozen/46715973?wl13=2877&selectedSellerId=0&wmlspartner=wlpa&gStoreCode=2877&gQT=1" class="list-group-item list-group-item-action" target="_blank">item 1</a>
+      <a href="https://www.homedepot.com/p/Everbilt-6-ft-x-50-ft-11-5-Gauge-Galvanized-Steel-Chain-Link-Fence-Fabric-308706EB/313173575" class="list-group-item list-group-item-action" target="_blank">item 2</a>
+      <a href="https://www.linkedin.com/feed/" class="list-group-item list-group-item-action" target="_blank">item 3</a>
+    </div>
+    </div>
+
+    <ul class="list-group-flush">
+      <li class="list-group-item list-group-item-success">green</li>
+      <li class="list-group-item list-group-item-warning">yellow</li>
+      <li class="list-group-item list-group-item-danger">red</li>
+    </ul>
+  </div>
+
+  <div id="section3">
+    <!--cards - at least one of which needs to contain an image-->
+    <div class="card justify-content-center shadow-lg" style="width:800px">
+      <img class="card-img-top" src="./img/jimmy.jpg" alt="jimmy carter">
+      <div class="card-body">
+        <h4 class="card-title" style="text-align:center">Rest in Peace, Jimbo</h4>
+        <p style="font-size:10px">The former US president Jimmy Carter, who has died aged 100, achieved a far more favourable reputation after leaving the White House than he ever secured during his single term of office. Following his electoral defeat in 1980 – when Ronald Reagan beat him by 489 to 49 electoral college votes – his sustained efforts to improve life for the deprived people of the world won him the 2002 Nobel peace prize.</p>
+        <h5 style="text-align:center">01.10.1924 - 29.12.2024</h5>
+      </div>
+    </div>
+  </div>
+
+  <div id="section4">
+    <!--dropdown - at least 4 types-->
+    <!--I am considering the button group from earlier to count for one of these-->
+    <div class="dropup">
+      <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+        Why does the name still have "drop" in it if it's going up?
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">what</li>
+        <li class="dropdown-item">is</li>
+        <li class="dropdown-item">this,</li>
+        <li class="dropdown-item">Australia?</li>
+      </ul>
+    </div>
+    
+    <div class="dropdown dropend">
+      <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+        /*implementation not shown*/
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">tweedledee</li>
+      </ul>
+    </div>
+
+    <div class="dropdown dropstart">
+      <button type="button" class="btn btn-light dropdown-toggle float-sm-end" data-bs-toggle="dropdown">
+        imagine this says something clever
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">tweedledum</li>
+      </ul>
+    </div>
+    
+    <!--navs: basic hori, verti, tabs, and pills-->
+    <ul class="nav justify-content-end">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <div class="spinner-border text-dark"></div>
+      </li>
+    </ul>
+
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#">item 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">item 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">item 3</a>
+      </li>
+    </ul>
+
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">item 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">item 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">item 3</a>
+      </li>
+    </ul>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#">item 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">item 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">item 3</a>
+      </li>
+    </ul>
+    
+    <!--navbar - at least 3 types-->
+    <nav class="navbar navbar-expand-sm bg-info fixed-top">
+
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+          </li>
+          <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Popover Header" data-bs-content="Lorem ipsum dolor sit amet">Popover_Regular</button>
+          <a href="#" title="Title" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Insert text here">Popover_Positioned</a>
+        </ul>
+      </div>
+
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Actual Website</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Nonsense, Part I</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">RIP Jimmy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section4">Nonsense, Part II</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <nav class="navbar bg-success navbar-expand-sm bg-light">
+
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!--modal - at least two types-->
+    <button type="button" class="btn btn-muted" data-bs-toggle="modal" data-bs-target="#modalNormal">this one is okay to mess with</button>
+    <div class="modal fade" id="modalNormal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <p>there's nothing really here, but at least there's a cool animation.</p>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">close</button>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalBS">
+      You probably shouldn't bother with this one
+    </button>
+    <div class="modal" id="modalBS">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>I'm sure there's a way out of here somewhere</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal"><p style="color:white">.</p></button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!--tooltip - default + positioned-->
+    <button type="button" class="btn btn-success" data-bs-toggle="tooltip" title="You've unlocked Luigi as a playable character!">Try me</button>
+
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Sometimes, I dream about cheese.">HalfLife</a>
+      
+    <!--offcanvas-->
+    <div class="offcanvas offcanvas-start" id="sidebar">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Call that a sidebar</h1>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Thank you, I'll be here all week.</p>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Walked into a pub the other day and all of the seats were facing left instead of towards the counter</button>
+
+    <div class="invisible">When you can't even say my name. Has the memory gone? Are you feeling numb?</div>
+
     <p>
       This page was made for a class assignment for the <kbd>Francis Tuttle <a href="https://www.francistuttle.edu/programs-and-classes/career-training-programs/computer-science-academy" target="_self" >Computer Science Academy</a></kbd>. The map was created using Map Chart's <a href="https://www.mapchart.net/world-advanced.html" target="_blank">Advanced Map Creator</a>
     </p>
+  </div>
   </body>
+  <script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+  </script>
 </html>
